@@ -29,14 +29,16 @@ Controller: JavaScript ile kullanıcı etkileşimlerinin kontrolü ve içerik g�
 Bu portfolyo sitesi, kişisel tanıtım ve dijital kimlik oluşturma amacıyla hazırlanmıştır. Aynı zamanda Front-End geliştirme pratiği yaparak MVC mimarisi ile daha sürdürülebilir ve düzenli bir kod yapısı hedeflenmiştir.
 
 📁 Dosya Yapısı
-📁 assets
-┣ 📁 css
-┣ 📁 images
-┣ 📁 javascript
-┗ 📁 lib
-📁 components
-📁 controls
-📁 model
-📁 view
+
+📁 assets/
+├── 📁 css/
+├── 📁 images/
+├── 📁 javascript/
+└── 📁 lib/
+📁 controls/
+📁 model/
+└── 📁 components/
+📁 view/
+└── 📁 layout/
 📄 index.html
 📄 README.md
