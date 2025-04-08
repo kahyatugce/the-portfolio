@@ -30,15 +30,19 @@ Bu portfolyo sitesi, kişisel tanıtım ve dijital kimlik oluşturma amacıyla h
 
 📁 Dosya Yapısı
 
-assets/
-├── css/
-├── images/
-├── javascript/
-└── lib/
-controls/
-model/
-└── components/
-view/
-└── layout/
-index.html
-README.md
+📁 assets
+📁 assets/css
+📁 assets/images
+📁 assets/javascript
+📁 assets/lib
+
+📁 controls
+
+📁 model
+📁 model/components
+
+📁 view
+📁 view/layout
+
+📄 index.html
+📄 README.md
