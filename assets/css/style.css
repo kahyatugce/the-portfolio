@@ -1,0 +1,255 @@
+/*? all site style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: var(--pageFont);
+  text-align: justify;
+  text-justify: inter-word;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  font-family: var(--pageFont);
+}
+
+/* ? section style */
+.section-content {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: var(--maxWidth);
+}
+.section-title {
+  text-align: center;
+  padding: 40px 0 80px;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-family: var(--headFont);
+  color: var(--cardMavi);
+}
+.section-title::after {
+  /* hakkımda altına çizgi */
+  content: "";
+  width: 80px;
+  height: 5px;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: var(--border-radius-s);
+  background: var(--secondary-color);
+}
+
+/*? header navbar */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: var(--footerBGC);
+  /* background-image: linear-gradient(
+      to right,
+      #fbc2eb 0%,
+      #a6c1ee 51%,
+      #fbc2eb 100%
+    ); */
+}
+header .navbar {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .nav-logo .logo-text {
+  /* color: var(--white-color); */
+  font-size: x-large;
+  font-weight: bold;
+  font-family: var(--headFont);
+}
+.navbar .nav-menu {
+  display: flex;
+  gap: 16px;
+}
+.myLogo {
+  height: 90px;
+  width: 90px;
+  border-radius: 25%;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  /* ! olmadan animation çalışmıyor */
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0);
+}
+
+.navbar .nav-menu .nav-link {
+  background: linear-gradient(
+    to right,
+    var(--cardMavi),
+    var(--cardMor),
+    var(--green-color)
+  );
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  color: rgba(0, 0, 0, 1);
+  font-size: large;
+  transition: color 0.2s ease-in-out;
+
+  padding: 10px 18px;
+  font-family: var(--pageFont);
+  text-transform: uppercase;
+}
+.navbar .nav-menu .nav-link:hover {
+  /* background: var(--primary-color); */
+  color: rgba(0, 0, 0, 0);
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+.navbar :where(#menu-close-button, #menu-open-button) {
+  display: none;
+}
+
+/* ? hero section */
+.hero-section {
+  min-height: 100vh;
+  /* background: var(--primary-color); */
+}
+.hero-section .section-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+.hero-section .hero-details .title {
+  line-height: 60px;
+  font-size: xx-large;
+  color: var(--secondary-color);
+  font-family: var(--headFont);
+}
+.hero-section .hero-details .subtitle {
+  margin-top: 12px;
+  max-width: 70%;
+  font-size: x-large;
+  font-weight: 500;
+}
+.hero-section .hero-details .description {
+  max-width: 70%;
+  margin: 24px 0 40px;
+  font-size: medium;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.hero-section .hero-details .button {
+  background-image: var(--buttonsColor);
+  color: white;
+
+  /* padding: 10px 15px; */
+  font-size: 1rem;
+
+  font-family: var(--pageFont);
+  /* cursor: pointer; */
+  /* transition: background 0.3s; */
+
+  color: var(--white-color);
+  /* hover varsa transition ekle */
+  transition: 0.3s ease;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  /* transition: 0.5s; */
+  background-size: 200% auto;
+  box-shadow: 0 4px 10px gainsboro;
+  width: 270px;
+  border-radius: 10px;
+}
+.buttons {
+  display: flex;
+  justify-self: self-start;
+}
+.hero-section .hero-details .button:hover {
+  background-position: right center;
+}
+.hero-section .hero-image-wrapper {
+  max-width: 400px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+/* ? hakkımda about section */
+.about-section {
+  padding: 100px 0;
+  /* background: var(--light-color); */
+}
+.about-section .section-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-section .about-image-wrapper .about-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  /* border-radius: var(--border-radius-circle); */
+}
+.about-section .about-details .section-title {
+  padding: 0;
+}
+.about-section .about-details .text {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 30px;
+  margin: 50px 0 30px;
+  /* text-align: center; */
+  font-size: medium;
+  font-family: var(--pageFont);
+}
+.about-section .social-link-list {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.about-section .social-link-list .social-link {
+  color: var(--cardMavi);
+  font-size: x-large;
+  transition: 0.2s ease;
+}
+.about-section .social-link-list .social-link:hover {
+  color: var(--secondary-color);
+}
