@@ -1,0 +1,25 @@
+@media screen and (max-width: 1200px) {
+  .mycard {
+    width: 75% !important;
+  }
+}
+/*  footer için responsive */
+@media (max-width: 1024px) {
+  .social-icons {
+    flex-wrap: wrap; /* Küçük ekranlarda alt alta geçmesine izin verir */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icon {
+    width: 80px; /* Buton boyutunu küçült */
+    height: 80px;
+    font-size: 2rem; /* İkon boyutunu küçült */
+    margin: 5px; /* Aralarındaki boşluğu düzenle */
+    margin-top: 25px;
+  }
+
+  .tooltip {
+    font-size: 0.7rem; /* ToolTip yazısını küçült */
+  }
+}

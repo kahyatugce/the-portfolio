@@ -1,0 +1,64 @@
+.sertifika {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px gray;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in;
+  margin-bottom: 30px;
+}
+
+.sertifika:hover {
+  transform: translateY(-5px);
+  /* yukarı yönde kayar */
+}
+
+.sertifika-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-family: var(--headFont);
+}
+
+.sertifika-subtitle {
+  font-size: 1.2rem;
+  color: var(--cardMavi);
+  margin-bottom: 10px;
+  font-family: var(--pageFont);
+}
+
+.sertifika-text {
+  font-size: 1rem;
+  /* color: var(--secondary-color); */
+  font-family: var(--pageFont);
+  margin-bottom: 20px;
+}
+
+.sertifika button {
+  background-image: var(--buttonsColor);
+  font-size: 1rem;
+  font-family: var(--pageFont);
+  color: var(--dark-color);
+  /* hover varsa transition ekle */
+  transition: 0.3s ease;
+  padding: 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 4px 10px gainsboro;
+  border-radius: 10px;
+  /* background-image: linear-gradient(
+    to right,
+    #fbc2eb 0%,
+    #a6c1ee 51%,
+    #fbc2eb 100%
+  ); */
+}
+
+.sertifika button:hover {
+  /* box-shadow: 0 4px 12px var(--cardMavi); */
+  /* background: var(--cardMavi); */
+  background-position: right center;
+}
