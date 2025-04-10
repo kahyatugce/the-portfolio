@@ -9,7 +9,6 @@
 body {
   font-family: var(--pageFont);
   text-align: justify;
-  text-justify: inter-word;
 }
 button {
   cursor: pointer;
@@ -68,16 +67,7 @@ header .navbar {
   align-items: center;
   justify-content: space-between;
 }
-.navbar .nav-logo .logo-text {
-  /* color: var(--white-color); */
-  font-size: x-large;
-  font-weight: bold;
-  font-family: var(--headFont);
-}
-.navbar .nav-menu {
-  display: flex;
-  gap: 16px;
-}
+
 .myLogo {
   height: 90px;
   width: 90px;
@@ -89,18 +79,6 @@ header .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.nav-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item {
-  /* ! olmadan animation çalışmıyor */
-  display: inline-block;
-  margin: 0 15px;
 }
 
 .nav-link:hover {
@@ -142,6 +120,17 @@ header .navbar {
 }
 .navbar :where(#menu-close-button, #menu-open-button) {
   display: none;
+}
+.navbar .nav-logo .logo-text {
+  /* color: var(--white-color); */
+  font-size: x-large;
+  font-weight: bold;
+  font-family: var(--headFont);
+}
+.nav-menu {
+  display: flex;
+  gap: 10px;
+  list-style: none;
 }
 
 /* ? hero section */
@@ -235,7 +224,7 @@ header .navbar {
   text-align: justify;
   text-justify: inter-word;
   line-height: 30px;
-  margin: 50px 0 30px;
+  margin: 50px 0 10px;
   /* text-align: center; */
   font-size: medium;
   font-family: var(--pageFont);
