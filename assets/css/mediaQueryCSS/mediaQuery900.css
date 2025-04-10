@@ -1,10 +1,12 @@
-/* ? media query maxWidth: 920px*/
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1000px) {
   :root {
     --fontsize-m: 1rem;
     --fontsize-l: 1.3rem;
     --fontsize-xl: 1.5rem;
     --fontsize-xxl: 1.8rem;
+  }
+  body {
+    overflow-x: hidden;
   }
 
   body.show-mobile-menu header::before {
