@@ -1,0 +1,12 @@
+/* ? Projeler alanı style */
+
+.project-section .project-list .project-item .name {
+  font-size: large;
+  font-weight: bold;
+  font-family: var(--headFont);
+  color: var(--primary-color);
+}
+.project-section .project-list .project-item .text {
+  font-family: var(--pageFont);
+  font-size: medium;
+}

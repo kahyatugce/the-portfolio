@@ -1,0 +1,104 @@
+.pLanguage {
+  /* background-color: var(--bgColor); */
+  height: 510px;
+}
+.swiper {
+  width: 220px;
+  height: 300px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.swiper-slide:nth-child(even) {
+  background-color: var(--white-color);
+  border: 4px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.swiper-slide:nth-child(odd) {
+  background-color: var(--white-color);
+  border: 4px solid var(--cardMavi);
+  color: var(--cardMavi);
+}
+.swiper-slide:nth-child(odd) .progress-bar {
+  font-family: var(--pageFont);
+  background-color: var(--cardMavi);
+}
+
+.swiper-slide:nth-child(even) .progress-bar {
+  font-family: var(--pageFont);
+  background-color: var(--primary-color);
+}
+.swiper-slide .name {
+  font-family: var(--headFont);
+}
+.swiper-slide .description {
+  font-family: var(--pageFont);
+}
+
+/* 
+.swiper-slide:nth-child(1n) {
+  background-color: var(--primary-color);
+}
+.swiper-slide:nth-child(2n) {
+  background-color: var(--primary-color);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: var(--primary-color);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: var(--primary-color);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgcvar(--primary-color);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rvar(--primary-color);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: var(--primary-color);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: var(--primary-color);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+*/
+.lang-image {
+  display: flex;
+  justify-self: center;
+  width: 96px;
+  height: 96px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--headFont);
+  text-transform: uppercase;
+  font-size: medium;
+  line-height: 20px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--pageFont);
+  font-size: small;
+}
