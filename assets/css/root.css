@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 
 /* 
 *Google Fonts
 * font-family: "Poppins", sans-serif; 
 * font-family: "Playwrite DE Grund", cursive;
+* font-family: "Rowdies", sans-serif;
+
  */
 
 :root {
   /* font family */
   --pageFont: "Poppins", sans-serif;
   --headFont: "Playwrite DE Grund", cursive;
+  --navFont: "Rowdies", sans-serif;
 
   /* --primary-color: #c822ff; */
   /* --primary-color: #fbc2eb; */
@@ -33,7 +37,7 @@
 
   /* color */
   --white-color: #fff;
-  --dark-color: #252525;
+  --dark-color: #404040;
   /* --primary-color: #e6abff; */
   /* --secondary-color: #6dc7ff; */
   --green-color: #00ff9c;
@@ -50,4 +54,5 @@
   /* font */
   --fW-medium: 500;
   --footerBGC: #f8f8f8;
+  --navbarBGC: #f3f3f3;
 }

@@ -2,9 +2,15 @@
   .mycard {
     width: 75% !important;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 /*  footer için responsive */
 @media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
   .social-icons {
     flex-wrap: wrap; /* Küçük ekranlarda alt alta geçmesine izin verir */
     justify-content: center;
